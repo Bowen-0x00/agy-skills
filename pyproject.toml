@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agy-skills"
+version = "1.0.0"
+description = "Inspect, search, diagnose, and manage Agent Skills for Google Antigravity (agy) via CLI, TUI, and a localhost web dashboard."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Bowen", email = "BowenLiu0001@gmail.com" },
+]
+keywords = ["antigravity", "agy", "agent-skills", "skill-manager", "cli", "tui", "ai-agents"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Environment :: Console :: Curses",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Application Frameworks",
+  "Topic :: Utilities",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Bowen-0x00/agy-skills"
+Repository = "https://github.com/Bowen-0x00/agy-skills"
+Issues = "https://github.com/Bowen-0x00/agy-skills/issues"
+
+[project.scripts]
+agy-skills = "agy_skills.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
